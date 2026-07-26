@@ -662,3 +662,126 @@ body {
   font-size: 11px;
   color: #94a3b8;
 }
+
+/* ========================================================================== */
+/*                           RESPONSIVE MEDIA QUERIES                         */
+/* ========================================================================== */
+
+@media (max-width: 768px) {
+  .app-wrapper {
+    padding: 16px 12px 32px;
+    gap: 20px;
+  }
+
+  #merc-wrap {
+    height: 300px;
+  }
+
+  #globe-container {
+    height: 420px;
+  }
+
+  .hero-brand-name {
+    font-size: 1.85rem;
+  }
+
+  .hero-logo-mark {
+    height: 38px;
+    width: 38px;
+  }
+
+  .hero-title {
+    font-size: 1.15rem;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 14px;
+    align-items: center;
+  }
+
+  .header-controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .preset-select {
+    flex: 1;
+    max-width: 220px;
+  }
+
+  .hero-quick-hints {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .hint-dot {
+    display: none;
+  }
+
+  .hero-quick-hints span {
+    background: #f1f5f9;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .marker-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .marker-controls {
+    width: 100%;
+  }
+
+  .control-subgroup {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #merc-wrap {
+    height: 240px;
+  }
+
+  #globe-container {
+    height: 360px;
+  }
+
+  .hero-brand-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.05rem;
+  }
+
+  .about-card {
+    padding: 18px 16px;
+  }
+
+  .not-found-card {
+    padding: 24px 16px;
+  }
+}
