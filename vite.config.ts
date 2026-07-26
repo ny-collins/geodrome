@@ -98,11 +98,23 @@ function customCleanRoutingPlugin(): Plugin {
 export default defineConfig({
   plugins: [customCleanRoutingPlugin()],
   build: {
+    target: 'es2022',
+    cssCodeSplit: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
         notFound: resolve(__dirname, '404.html')
+      },
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/three')) {
+            return 'three-vendor';
+          }
+          if (id.includes('node_modules/topojson-client') || id.includes('node_modules/d3-geo')) {
+            return 'geo-vendor';
+          }
+        }
       }
     }
   }
