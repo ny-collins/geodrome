@@ -1,6 +1,10 @@
-# <img src="public/logo-mark.svg" width="36" height="36" alt="Geodrome Emblem" align="center"> Geodrome
+<div align="center">
+  <img src="public/logo-mark.svg" alt="Geodrome Emblem" width="80" height="80">
+  <h1>GEODROME</h1>
+  <p><strong>Interactive 3D Geodesics &amp; Diametric Antipodes Engine</strong></p>
+</div>
 
-> **Interactive 3D Geodesics & Diametric Antipodes Engine**
+---
 
 Geodrome is a modernized, open-source 3D WebGL spherical visualizer and 2D Mercator map projection engine designed to explore Great Circle navigation, orthodromic paths, and diametric antipodal geometry.
 
