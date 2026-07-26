@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geodrome | Interactive 3D Geodesics & Antipodes</title>
+  <meta name="description" content="Interactive 3D Globe and 2D Mercator Map visualizer for great circles, antipodes, and geodesic mathematics. Concept by Ralph Crewe.">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0284c7">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Geodrome">
+  <meta property="og:title" content="Geodrome | Interactive 3D Geodesics">
+  <meta property="og:description" content="Visualize great circles, orthodromic paths, and antipodes on an interactive 3D globe and 2D Mercator map projection.">
+  <meta property="og:image" content="/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================== -->
+  <!--                                HEADER NAVBAR                               -->
+  <!-- ========================================================================== -->
+  <header class="app-header">
+    <a href="/" class="brand" title="Geodrome Homepage">
+      <img src="/logo-mark.svg" alt="Geodrome Logo" class="header-logo-icon">
+      <h1>Geodrome</h1>
+    </a>
+
+    <div class="header-controls">
+      <select id="select-preset" class="preset-select">
+        <option value="" disabled selected>Fly to location...</option>
+      </select>
+      <a href="/about" class="globe-btn btn-tribute">
+        About & Story
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================== -->
+  <!--                                MAIN CONTENT                                -->
+  <!-- ========================================================================== -->
+  <main class="app-wrapper">
+
+    <!-- Conspicuous Hero Welcome Section -->
+    <section class="hero-section">
+      <div class="hero-brand">
+        <img src="/logo-mark.svg" alt="Geodrome Emblem" class="hero-logo-mark">
+        <h1 class="hero-brand-name">GEODROME</h1>
+      </div>
+
+      <h2 class="hero-title">Explore Geodesics & Diametric Antipodes</h2>
+      <p class="hero-subtitle">
+        An interactive 3D spherical engine to plot great circle paths, calculate antipodal points, and visualize 2D Mercator projections in real-time.
+      </p>
+      
+      <div class="hero-quick-hints">
+        <span>Double-click globe to drop marker</span>
+        <span class="hint-dot">•</span>
+        <span>Select heading for Great Circles</span>
+        <span class="hint-dot">•</span>
+        <span>Toggle X-Ray for core tunnel lines</span>
+      </div>
+    </section>
+
+    <!-- Workspace Viewports -->
+    <div class="workspace-section">
+      <div id="globe-wrap">
+        <div id="merc-wrap">
+          <canvas id="merc-canvas"></canvas>
+        </div>
+        <div id="globe-container"></div>
+      </div>
+
+      <div class="globe-btns">
+        <button id="btn-transparency" class="globe-btn">Transparency: OFF</button>
+        <button id="btn-clear-all" class="globe-btn">Clear Markers</button>
+      </div>
+
+      <div id="marker-panel-container">
+        <!-- Rendered by MarkerPanel TS module -->
+      </div>
+    </div>
+
+    <!-- Feature Highlights Grid -->
+    <section class="features-section">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-badge">01 • Pathfinding</div>
+          <h3>Geodesic Navigation</h3>
+          <p>
+            Plot orthodromic Great Circles across any bearing from 0° N to 315° NW. Watch animated 3D geodesic tubes grow in real-time led by traveling arrow indicators.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-badge">02 • Spherical Math</div>
+          <h3>Antipodal Mathematics</h3>
+          <p>
+            Instantly calculate exact diametrically opposite coordinates. Enable core diameter lines to tunnel straight through Earth's center to its antipodes.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-badge">03 • Cartography</div>
+          <h3>Dual Projection Sync</h3>
+          <p>
+            Simultaneously view dynamic WebGL 3D spherical rendering paired with synced 2D Mercator canvas projections with seam-clipping date line math.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================== -->
+  <!--                               FOOTER COMPONENT                             -->
+  <!-- ========================================================================== -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" title="Geodrome Homepage">
+          <img src="/logo-full.svg" alt="Geodrome Logo" class="footer-logo">
+        </a>
+        <p>Interactive 3D Geodesics & Antipodes Engine</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Main Globe</a>
+        <a href="/about">About & Story</a>
+        <a href="https://www.ralphcrewe.com/curiosity" target="_blank" rel="noopener noreferrer">Ralph Crewe Original</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Original concept by Ralph Crewe • Modernized Open Edition</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

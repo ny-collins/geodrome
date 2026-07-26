@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Unmapped Coordinates | Geodrome</title>
+  <meta name="description" content="The requested page coordinates do not exist on the Geodrome map.">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0284c7">
+
+  <meta property="og:site_name" content="Geodrome">
+  <meta property="og:title" content="404: Unmapped Coordinates | Geodrome">
+  <meta property="og:image" content="/og-image.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================== -->
+  <!--                                HEADER NAVBAR                               -->
+  <!-- ========================================================================== -->
+  <header class="app-header">
+    <a href="/" class="brand" title="Geodrome Homepage">
+      <img src="/logo-mark.svg" alt="Geodrome Logo" class="header-logo-icon">
+      <h1>Geodrome</h1>
+    </a>
+
+    <div class="header-controls">
+      <a href="/" class="globe-btn">
+        Main Globe
+      </a>
+      <a href="/about" class="globe-btn btn-tribute">
+        About Page
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================== -->
+  <!--                                404 CONTENT                                 -->
+  <!-- ========================================================================== -->
+  <main class="app-wrapper not-found-layout">
+    <div class="not-found-card">
+      <div class="error-code-badge">Error 404</div>
+      <h2>Coordinate Out of Bounds</h2>
+      <p>
+        You have drifted beyond the 180 degree Meridian. The path or coordinates you were searching for do not exist in this map projection.
+      </p>
+
+      <div class="coordinate-box">
+        <div class="coord-indicator">
+          <span class="coord-title">Current Radar Status:</span>
+          <span class="coord-data">Latitude: Unknown | Longitude: Out of Bounds</span>
+        </div>
+      </div>
+
+      <div class="not-found-actions">
+        <a href="/" class="globe-btn btn-tribute">
+          Recalibrate Orbit (Return Home)
+        </a>
+        <button id="btn-random-city" class="globe-btn">
+          Teleport to Random World City
+        </button>
+        <a href="/about" class="globe-btn">
+          Read Engineering Story
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!--                               FOOTER COMPONENT                             -->
+  <!-- ========================================================================== -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" title="Geodrome Homepage">
+          <img src="/logo-full.svg" alt="Geodrome Logo" class="footer-logo">
+        </a>
+        <p>Interactive 3D Geodesics & Antipodes Engine</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Main Globe</a>
+        <a href="/about">About & Story</a>
+        <a href="https://www.ralphcrewe.com/curiosity" target="_blank" rel="noopener noreferrer">Ralph Crewe Original</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Original concept by Ralph Crewe • Modernized Open Edition</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/not-found.ts"></script>
+</body>
+</html>

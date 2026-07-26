@@ -1,0 +1,16 @@
+{
+  "name": "Geodrome",
+  "short_name": "Geodrome",
+  "description": "Interactive 3D Geodesics & Antipodes Engine",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

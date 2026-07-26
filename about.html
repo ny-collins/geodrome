@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Story | Geodrome</title>
+  <meta name="description" content="The story, technical evolution, and geodesic mathematics behind Geodrome. Concept by Ralph Crewe.">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0284c7">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Geodrome">
+  <meta property="og:title" content="About & Story | Geodrome">
+  <meta property="og:description" content="Explore the engineering breakdown, mathematical models, and open-source tribute behind Geodrome.">
+  <meta property="og:image" content="/og-image.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================== -->
+  <!--                                HEADER NAVBAR                               -->
+  <!-- ========================================================================== -->
+  <header class="app-header">
+    <a href="/" class="brand" title="Geodrome Homepage">
+      <img src="/logo-mark.svg" alt="Geodrome Logo" class="header-logo-icon">
+      <h1>Geodrome</h1>
+    </a>
+
+    <div class="header-controls">
+      <a href="/" class="globe-btn btn-tribute">
+        Back to Interactive Globe
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================== -->
+  <!--                                ABOUT CONTENT                               -->
+  <!-- ========================================================================== -->
+  <main class="app-wrapper about-layout">
+
+    <!-- Section 1: Concept & Origin -->
+    <section class="about-card">
+      <div class="about-card-badge">Original Concept & Tribute</div>
+      <h2>Inspired by Ralph Crewe</h2>
+      <p>
+        <strong>Geodrome</strong> is based on the original <strong>"Great Circle Globe"</strong> project concept created by science communicator 
+        <a href="https://www.ralphcrewe.com/curiosity" target="_blank" rel="noopener noreferrer">Ralph Crewe</a>. 
+        Ralph initially "vibe-coded" the first prototype to explore geodesics, antipodes, and 3D spherical mathematics.
+      </p>
+      <div class="quote-box">
+        "Vibe-coding allows rapid exploration of mathematical concepts, creating functional prototypes that inspire curiosity."
+      </div>
+      <p>
+        After seeing his demo and receiving his open-source permission to build upon his code, we set out to engineer a modernized, production-ready edition that refactors the codebase into Geodrome while preserving his vision and minimalist aesthetic.
+      </p>
+    </section>
+
+    <!-- Section 2: Technical Evolution -->
+    <section class="about-card">
+      <div class="about-card-badge">Engineering & Improvements</div>
+      <h2>What We Identified & Modernized</h2>
+      <p>
+        Building upon the prototype required solving several core mathematical and rendering challenges:
+      </p>
+
+      <div class="tech-grid">
+        <div class="tech-item">
+          <h4>3D Spherical UV Coordinate Alignment</h4>
+          <p>
+            Three.js <code>SphereGeometry</code> maps texture coordinates differently from standard unadjusted spherical formulas. We aligned the Z-axis coordinate formulas so that raycasting, marker placement, and camera navigation match landmasses with 100% accuracy.
+          </p>
+        </div>
+
+        <div class="tech-item">
+          <h4>Unified 2D Mercator Projection</h4>
+          <p>
+            Replaced conflicting 2D coordinate transformation functions with a unified <code>lngToX</code> and <code>latToY</code> projection system, resolving longitude inversion bugs and ensuring exact placement for marker dots, antipodes, and landmasses.
+          </p>
+        </div>
+
+        <div class="tech-item">
+          <h4>Animated Geodesic Tube Growth</h4>
+          <p>
+            Re-engineered path drawing to animate 3D tube geometries over a 3-second frame loop led by a traveling arrow cone, while streaming progressive coordinate points to the 2D Mercator canvas.
+          </p>
+        </div>
+
+        <div class="tech-item">
+          <h4>Dual-Pass X-Ray Rendering & VRAM Cleanup</h4>
+          <p>
+            Implemented a two-pass rendering engine with <code>THREE.BackSide</code> meshes for hollow sphere transparency, paired with systematic <code>disposeMesh</code> resource cleanup to prevent memory leaks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Geodesic Mathematics -->
+    <section class="about-card">
+      <div class="about-card-badge">Mathematics</div>
+      <h2>Geodesics & Antipodes Explained</h2>
+      <p>
+        A <strong>Great Circle</strong> is the shortest path between any two points on the surface of a sphere. Unlike straight lines on a flat 2D map, great circles curve according to spherical trigonometry.
+      </p>
+      <p>
+        An <strong>Antipode</strong> is the point on Earth's surface diametrically opposite to a given location. Drilling directly through the center of the planet from any point brings you to its exact antipode.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================== -->
+  <!--                               FOOTER COMPONENT                             -->
+  <!-- ========================================================================== -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" title="Geodrome Homepage">
+          <img src="/logo-full.svg" alt="Geodrome Logo" class="footer-logo">
+        </a>
+        <p>Interactive 3D Geodesics & Antipodes Engine</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Main Globe</a>
+        <a href="/about">About & Story</a>
+        <a href="https://www.ralphcrewe.com/curiosity" target="_blank" rel="noopener noreferrer">Ralph Crewe Original</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Original concept by Ralph Crewe • Modernized Open Edition</span>
+    </div>
+  </footer>
+
+</body>
+</html>

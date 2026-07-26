@@ -1,0 +1,47 @@
+{
+  "name": "geodrome",
+  "version": "1.0.0",
+  "description": "Interactive 3D Geodesics & Diametric Antipodes Engine",
+  "author": "Collins Mwangi",
+  "license": "MIT",
+  "homepage": "https://geodrome.pages.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ny-collins/geodrome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ny-collins/geodrome/issues"
+  },
+  "keywords": [
+    "geodesic",
+    "antipode",
+    "great-circle",
+    "orthodromic",
+    "threejs",
+    "webgl",
+    "mercator",
+    "typescript",
+    "gis",
+    "spherical-trigonometry"
+  ],
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/d3-geo": "^3.1.0",
+    "@types/three": "^0.160.0",
+    "@types/topojson-client": "^3.1.4",
+    "d3-geo": "^3.1.1",
+    "three": "^0.160.0",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0",
+    "wrangler": "^4.114.0"
+  }
+}
