@@ -1,0 +1,27 @@
+# Geodrome
+
+> Interactive 3D Geodesics & Diametric Antipodes Engine
+
+Geodrome is a modernized, open-source 3D WebGL spherical visualizer and 2D Mercator map projection engine designed to explore Great Circle navigation, orthodromic paths, and diametric antipodal geometry.
+
+- Domain: https://geodrome.pages.dev
+- Repository: https://github.com/ny-collins/geodrome
+- Concept Credit: Inspired by Ralph Crewe (https://www.ralphcrewe.com/curiosity)
+
+## Core Capabilities
+
+- Interactive 3D WebGL Globe: Orbit controls, camera interpolation, double-tap raycasting coordinate lookup.
+- Dual Projection Sync: Synchronized 3D WebGL sphere and 2D Mercator canvas with seam-clipping date line math.
+- Geodesic Pathfinding: 3-second animated geodesic tube growth along 8 compass bearings.
+- Antipodal Mathematics: Diametric opposite point computation with internal core diameter tunnel lines.
+- Dual-Pass X-Ray Transparency: Two-pass THREE.BackSide hollow sphere rendering.
+
+## Mathematical Formulas
+
+- 3D Spherical UV Coordinates: X = r * sin(phi) * cos(theta), Y = r * cos(phi), Z = -r * sin(phi) * sin(theta) where phi = (90 - lat) * rad and theta = lng * rad.
+- 2D Mercator Projection: lngToX(lng) = (((lng + 180) % 360 + 360) % 360) / 360 * width.
+
+## Documentation Links
+
+- About Page: https://geodrome.pages.dev/about
+- Developer Guidelines: https://github.com/ny-collins/geodrome/blob/main/docs/DEVELOPMENT_GUIDELINES.md
