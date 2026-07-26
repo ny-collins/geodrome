@@ -10,7 +10,7 @@
 
 body {
   background-color: #f8fafc;
-  color: #333333;
+  color: #1e293b;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
@@ -44,7 +44,7 @@ body {
 }
 
 .brand:hover h1 {
-  color: #0284c7;
+  color: #0369a1;
 }
 
 .header-logo-icon {
@@ -55,7 +55,7 @@ body {
 .brand h1 {
   font-size: 1.15rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #0f172a;
   letter-spacing: .02em;
   transition: color 0.15s ease;
 }
@@ -68,8 +68,8 @@ body {
 
 .preset-select {
   background: #ffffff;
-  border: 1px solid #bbb;
-  color: #333;
+  border: 1px solid #94a3b8;
+  color: #0f172a;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   padding: 6px 12px;
@@ -83,9 +83,9 @@ body {
 /* ========================================================================== */
 
 .globe-btn {
-  background: #f0f0f0;
-  color: #333;
-  border: 1px solid #bbb;
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #94a3b8;
   border-radius: 4px;
   padding: 7px 14px;
   font-family: 'Poppins', sans-serif;
@@ -105,24 +105,24 @@ body {
 
 .globe-btn.active {
   background: #dde8ff;
-  border-color: #6688cc;
+  border-color: #0284c7;
   border-width: 1.5px;
 }
 
 .btn-tribute {
-  background: #0284c7;
+  background: #0369a1;
   color: #ffffff;
-  border: 1px solid #0369a1;
+  border: 1px solid #075985;
   font-weight: 500;
 }
 
 .btn-tribute:hover {
-  background: #0369a1;
+  background: #075985;
 }
 
 .btn-copy-coord {
   background: #e0f2fe;
-  color: #0369a1;
+  color: #075985;
   border: 1px solid #bae6fd;
   font-size: 10px;
   font-weight: 600;
@@ -187,13 +187,13 @@ body {
 .hero-title {
   font-size: 1.35rem;
   font-weight: 600;
-  color: #0284c7;
+  color: #0369a1;
   letter-spacing: -0.01em;
 }
 
 .hero-subtitle {
   font-size: 13px;
-  color: #475569;
+  color: #334155;
   max-width: 720px;
   line-height: 1.6;
 }
@@ -206,11 +206,11 @@ body {
   gap: 10px;
   margin-top: 6px;
   font-size: 12px;
-  color: #64748b;
+  color: #334155;
 }
 
 .hint-dot {
-  color: #0284c7;
+  color: #0369a1;
   font-weight: bold;
 }
 
@@ -277,7 +277,7 @@ body {
 .hint {
   margin-top: 6px;
   font-size: 11px;
-  color: #999;
+  color: #475569;
   text-align: center;
   letter-spacing: .04em;
 }
@@ -289,13 +289,13 @@ body {
 #marker-panel {
   margin-top: 8px;
   width: 100%;
-  background: #f8f8f8;
-  border: 1px solid #ccc;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 6px;
   padding: 12px 16px;
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #0f172a;
   display: none;
 }
 
@@ -304,7 +304,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e2e8f0;
   flex-wrap: wrap;
 }
 
@@ -316,22 +316,23 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #cc2200;
+  background: #b91c1c;
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .marker-info {
   flex: 1;
-  color: #333;
+  color: #0f172a;
   min-width: 180px;
   font-size: 11px;
   line-height: 1.6;
 }
 
 .antipode-text {
-  color: #0044cc;
+  color: #1d4ed8;
   font-size: 10.5px;
+  font-weight: 500;
 }
 
 .marker-controls {
@@ -350,15 +351,15 @@ body {
 
 .heading-label {
   font-size: 11px;
-  color: #555;
+  color: #334155;
   white-space: nowrap;
 }
 
 .select-heading {
-  background: #fff;
-  border: 1px solid #bbb;
+  background: #ffffff;
+  border: 1px solid #94a3b8;
   border-radius: 3px;
-  color: #333;
+  color: #0f172a;
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
   padding: 3px 4px;
@@ -389,8 +390,9 @@ body {
 
 .feature-badge {
   display: inline-block;
-  background: #f1f5f9;
-  color: #0284c7;
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
   font-size: 10.5px;
   font-weight: 600;
   padding: 2px 6px;
@@ -408,7 +410,7 @@ body {
 .feature-card p {
   font-size: 12px;
   line-height: 1.6;
-  color: #64748b;
+  color: #334155;
 }
 
 /* ========================================================================== */
@@ -453,7 +455,7 @@ body {
 .about-card p {
   font-size: 13px;
   line-height: 1.7;
-  color: #475569;
+  color: #334155;
   margin-bottom: 12px;
 }
 
@@ -462,17 +464,18 @@ body {
 }
 
 .about-card a {
-  color: #0284c7;
+  color: #0369a1;
   text-decoration: underline;
+  font-weight: 500;
 }
 
 .quote-box {
   background: #f8fafc;
-  border-left: 3px solid #0284c7;
+  border-left: 3px solid #0369a1;
   padding: 10px 16px;
   font-style: italic;
   font-size: 13px;
-  color: #1e293b;
+  color: #0f172a;
   border-radius: 4px;
   margin: 14px 0;
 }
@@ -486,7 +489,7 @@ body {
 
 .tech-item {
   background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 6px;
   padding: 16px;
 }
@@ -501,12 +504,13 @@ body {
 .tech-item p {
   font-size: 12px;
   line-height: 1.6;
-  color: #64748b;
+  color: #334155;
   margin-bottom: 0;
 }
 
 .tech-item code {
   background: #e2e8f0;
+  color: #0f172a;
   padding: 1px 4px;
   border-radius: 3px;
   font-family: monospace;
@@ -557,7 +561,7 @@ body {
 
 .not-found-card p {
   font-size: 13px;
-  color: #475569;
+  color: #334155;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -580,7 +584,7 @@ body {
 .coord-title {
   font-size: 11px;
   font-weight: 600;
-  color: #1e293b;
+  color: #0f172a;
   text-transform: uppercase;
   letter-spacing: .05em;
 }
@@ -633,7 +637,7 @@ body {
 
 .footer-brand p {
   font-size: 11px;
-  color: #64748b;
+  color: #334155;
 }
 
 .footer-links {
@@ -643,7 +647,7 @@ body {
 }
 
 .footer-links a {
-  color: #0284c7;
+  color: #0369a1;
   font-size: 12px;
   text-decoration: none;
   font-weight: 500;
@@ -651,7 +655,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #0369a1;
+  color: #075985;
   text-decoration: underline;
 }
 
@@ -662,7 +666,7 @@ body {
   border-top: 1px solid #f1f5f9;
   text-align: center;
   font-size: 11px;
-  color: #94a3b8;
+  color: #475569;
 }
 
 /* ========================================================================== */
@@ -734,6 +738,7 @@ body {
 
   .hero-quick-hints span {
     background: #f1f5f9;
+    color: #334155;
     padding: 3px 8px;
     border-radius: 4px;
   }
