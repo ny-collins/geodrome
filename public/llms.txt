@@ -2,13 +2,16 @@
 
 > Interactive 3D Geodesics & Diametric Antipodes Engine
 
-Geodrome is a modernized, open-source 3D WebGL spherical visualizer and 2D Mercator map projection engine designed to explore Great Circle navigation, orthodromic paths, and diametric antipodal geometry.
+Geodrome is a modernized, open-source 3D WebGL spherical visualizer and 2D Mercator map projection engine designed to explore Great Circle navigation, orthodromic paths, and diametric antipodal geometry. Inspired by science communicator Ralph Crewe.
 
-- Domain: https://geodrome.pages.dev
-- Repository: https://github.com/ny-collins/geodrome
-- Concept Credit: Inspired by Ralph Crewe (https://www.ralphcrewe.com/curiosity)
+## Primary Resources
 
-## Core Capabilities
+- [Geodrome Production Engine](https://geodrome.pages.dev): Live WebGL interactive 3D globe and 2D Mercator map visualizer.
+- [About & Engineering Story](https://geodrome.pages.dev/about): Technical breakdown, origin story, and geodesic mathematical principles.
+- [GitHub Repository](https://github.com/ny-collins/geodrome): Open-source TypeScript codebase, build scripts, and issue tracker.
+- [Developer Guidelines](https://github.com/ny-collins/geodrome/blob/main/docs/DEVELOPMENT_GUIDELINES.md): Architectural principles, coding conventions, VRAM lifecycle, and mathematical projection models.
+
+## Core Features
 
 - Interactive 3D WebGL Globe: Orbit controls, camera interpolation, double-tap raycasting coordinate lookup.
 - Dual Projection Sync: Synchronized 3D WebGL sphere and 2D Mercator canvas with seam-clipping date line math.
@@ -16,12 +19,11 @@ Geodrome is a modernized, open-source 3D WebGL spherical visualizer and 2D Merca
 - Antipodal Mathematics: Diametric opposite point computation with internal core diameter tunnel lines.
 - Dual-Pass X-Ray Transparency: Two-pass THREE.BackSide hollow sphere rendering.
 
-## Mathematical Formulas
+## Mathematical Specifications
 
 - 3D Spherical UV Coordinates: X = r * sin(phi) * cos(theta), Y = r * cos(phi), Z = -r * sin(phi) * sin(theta) where phi = (90 - lat) * rad and theta = lng * rad.
 - 2D Mercator Projection: lngToX(lng) = (((lng + 180) % 360 + 360) % 360) / 360 * width.
 
-## Documentation Links
+## Optional
 
-- About Page: https://geodrome.pages.dev/about
-- Developer Guidelines: https://github.com/ny-collins/geodrome/blob/main/docs/DEVELOPMENT_GUIDELINES.md
+- [Ralph Crewe Original](https://www.ralphcrewe.com/curiosity): Science communication site inspiring this project.
